@@ -99,7 +99,7 @@ export const projects = [
     coverImage:  '/images/projects/vidnote/cover.jpg',
     detailImage: '/images/projects/vidnote/detail.jpg',
     year:        '2025',
-    techStack:   ['Python', 'Whisper', 'Ollama', 'Gemma', 'FFmpeg', 'Deno'],
+    techStack:   ['Python', 'Whisper', 'Ollama', 'Gemma', 'FFmpeg'],
     features: [
       { title: 'Speaker diarization',     description: 'Transcript automatically split and color-coded per speaker using pyannote.' },
       { title: 'Hardsubbed video output', description: 'Colored subtitles burned directly into the video via FFmpeg using NVENC or libx264.' },
@@ -135,7 +135,7 @@ export const projects = [
       { title: 'Deployed as a public web app',     description: 'FastAPI app live on Railway — accessible in the browser without a local Python setup.' },
     ],
     githubUrl: 'https://github.com/owen-aldrich/Smart-Demand',
-    liveUrl:   'https://smart-demand-production-5e7f.up.railway.app',
+    liveUrl:   null,
   },
   {
     slug:        'toxicheck',
