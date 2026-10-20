@@ -1,0 +1,1476 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Update `vite.config.js` to add the Vitest test block (environment jsdom, setupFiles, globals true) so the same config handles both dev and test": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164886729
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164899956
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164956191
+      }
+    ],
+    "1.2 Update `index.html` to set `<title>Owen Aldrich Setiawan</title>`, the correct `og:title`, `og:description`, `og:url`, and `og:image` meta tags using the exact name and tagline from Figma": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164887022
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164904013
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164985871
+      }
+    ],
+    "1.3 Create `.env` at project root with `VITE_WEB3FORMS_KEY=` (empty placeholder)": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164887235
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164907498
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164990420
+      }
+    ],
+    "1.4 Create `.env.example` at project root with `VITE_WEB3FORMS_KEY=` and no real value": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164887390
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164911054
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164994112
+      }
+    ],
+    "1.5 Ensure `.gitignore` lists `.env` so the access key is never committed; add it if absent": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164887581
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164914667
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164998045
+      }
+    ],
+    "1.6 Create `src/test/setup.js` that imports `@testing-library/jest-dom` for extended matchers": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164887757
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164918535
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165002086
+      }
+    ],
+    "2.1 Replace the `personal` export with Owen's exact Figma values": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164887878
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165009643
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165436710
+      }
+    ],
+    "2.2 Verify `navLinks` export contains the five links matching Figma nav labels, with correct `id` anchors (`about`, `work`, `stack`, `capabilities`, `contact`)": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164888140
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165013473
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165441952
+      }
+    ],
+    "2.3 Verify `projects` array has at least the three seed projects (nexusflow, datasentinel, promptlens) each with all required fields (`slug`, `title`, `description`, `year`, `category`, `coverImage`, `detailImage`, `techStack`, `features`, `outcomes`, `githubUrl`, `liveUrl`)": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164888292
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165017497
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165446908
+      }
+    ],
+    "2.4 Verify `certificates` array has at least the three seed certificates each with all required fields (`id`/unique key, `title`, `issuer`, `platform`, `date`, `grade`, `description`, `image`, `pdfUrl`)": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164888544
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165021500
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165451816
+      }
+    ],
+    "2.5 Verify `coreStack` array has four card objects, each with `title`, `subtitle`, and `items: [{ name, icon }]`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164888653
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165027813
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165456413
+      }
+    ],
+    "2.6 Verify `capabilities` array has exactly six objects each with `number`, `title` (two-line array, uppercase), and `description`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164888700
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165033144
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165461332
+      }
+    ],
+    "3.1 Create `src/components/PlaceholderImage.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164888752
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165467760
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165771710
+      }
+    ],
+    "3.2 Create `src/components/IconBox.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164888800
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165472505
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165776415
+      }
+    ],
+    "4.1 Create `src/App.jsx` with react-router-dom v6 route definitions": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164888853
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165785972
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165881589
+      }
+    ],
+    "4.2 Update `src/main.jsx` to import `App` from `./App` (already wraps in `BrowserRouter` — confirm it remains intact)": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164888908
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165790261
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165887135
+      }
+    ],
+    "4.3 Create `src/pages/HomePage.jsx` as a skeleton that renders `<Navbar />`, a `<main>` wrapper, and `<Footer />` with placeholder `<section>` elements for each of the six home sections; assign IDs: `about`, `work`, `stack`, `capabilities`, `contact`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164888959
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165899463
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165904048
+      }
+    ],
+    "4.4 Create `src/pages/ProjectDetailPage.jsx` as a skeleton that reads `useParams()`, looks up the project from `content.js`, and returns `<Navigate to=\"/\" replace />` when no match is found; otherwise renders `<Navbar />`, a `<main className=\"pt-[120px]\">`, and `<Footer />`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889009
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165908742
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165913730
+      }
+    ],
+    "5.1 Add `menuOpen` boolean state and a hamburger `<button>` that appears only on mobile (`md:hidden`); clicking it toggles `menuOpen`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889057
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165918947
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166305028
+      }
+    ],
+    "5.2 Render the mobile dropdown nav menu — visible only when `menuOpen === true` — containing all `navLinks` as full-width links; each link closes the menu on click": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889104
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165924135
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166310860
+      }
+    ],
+    "5.3 Verify the desktop nav pill renders `personal.name` (first word of `firstName`) as the logo at 20px Plus Jakarta Sans Bold, and all five `navLinks` with hover `bg-white shadow-card-sm` treatment on the pill buttons": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889153
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165928622
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166316429
+      }
+    ],
+    "6.1 Render a full-width `<footer>` with a top border `border-t border-border-color`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889202
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165794462
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165892972
+      }
+    ],
+    "7.1 Implement the 12-column desktop grid (`grid grid-cols-12 gap-9`) with text content in cols 1–7 and portrait card in cols 8–12": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889254
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166322033
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166443073
+      }
+    ],
+    "7.2 Render the hero name using `personal.heroName` (\"Owen Aldrich S\") in Newsreader Bold at `text-[62px]` desktop / `text-[44px]` mobile": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889306
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166328005
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166448008
+      }
+    ],
+    "7.3 Render the tagline from `personal.tagline` below the name in Plus Jakarta Sans": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889358
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166332765
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166452952
+      }
+    ],
+    "7.4 Render two CTA buttons from `personal.heroBtns`: dark-filled (\"View projects\" → `#work`) and outlined (\"About me\" → `#about`), both with `rounded-full`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889407
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166337690
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166458151
+      }
+    ],
+    "7.5 Render the two `personal.heroLinks` social cards (GitHub and Email) — each shows label, icon via `<IconBox>`, and value string": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889457
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166343450
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166463358
+      }
+    ],
+    "7.6 Render the portrait card (`w-[460px] h-[540px]` desktop, `h-[360px]` mobile) loading from `/images/profile/hero.jpg`; use `onError` → swap to `<PlaceholderImage>` of the same dimensions with `bg-image-bg`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889509
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166350192
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166468996
+      }
+    ],
+    "7.7 Apply mobile stacked layout (`flex-col md:grid`) — portrait card below text content, portrait at 360px tall, 24px radius on mobile": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889561
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166356836
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166474040
+      }
+    ],
+    "8.1 Render the section label `\"// 01 — ABOUT\"` in JetBrains Mono with `text-muted text-sm`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889610
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166479720
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166905722
+      }
+    ],
+    "8.2 Render the heading `\"AI Engineer\"` at `text-[48px] font-bold font-jakarta` and subtitle `\"turning models into real products\"` at `text-[36px] font-normal font-jakarta`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889667
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166484389
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166910195
+      }
+    ],
+    "8.3 Map `personal.bio` array to `<p>` elements — two paragraphs with verbatim Figma text": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889719
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166489351
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166914673
+      }
+    ],
+    "8.4 Map `personal.focusChips` to chip `<span>` elements with `bg-chip-bg rounded-full px-4 py-1.5 font-jakarta text-sm text-secondary`; chips must be: \"Machine Learning\", \"Computer Vision\", \"NLP & Speech Recognition\", \"Full-Stack Engineering\"": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889769
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166495900
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166920004
+      }
+    ],
+    "8.5 Render the about photo card — yellow card offset container (`bg-accent-yellow border border-accent-yellow-border rounded-card-lg`) containing the photo loaded from `personal.aboutPhoto`; `onError` swaps to `<PlaceholderImage variant=\"about\">` with the JetBrains Mono overlay text \"PROFILE PHOTO — ADD LATER\" + \"[ aspect-ratio 1:1 ]\"": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889817
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166505020
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166926010
+      }
+    ],
+    "8.6 Render the info bar at the bottom of the section showing three labeled values: `personal.location`, `personal.status`, and `personal.focus` — each with a small label above in JetBrains Mono and the value below in Plus Jakarta Sans": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889911
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166510022
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166931324
+      }
+    ],
+    "9.1 Create `src/components/WorkSection.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164889978
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166936675
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167097466
+      }
+    ],
+    "9.2 Create `src/components/TabSwitcher.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890068
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166940916
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167101887
+      }
+    ],
+    "9.3 Create `src/components/ProjectsPanel.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890161
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166945227
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167106614
+      }
+    ],
+    "9.4 Create `src/components/ProjectCard.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890263
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166949705
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167111143
+      }
+    ],
+    "9.5 Create `src/components/CertificatesPanel.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890368
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166955209
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167115720
+      }
+    ],
+    "9.6 Create `src/components/CertificateCard.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890456
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166959588
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167119964
+      }
+    ],
+    "9.7 Create `src/components/CertificateModal.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890524
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166963997
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167124282
+      }
+    ],
+    "10.1 Render section label `\"// 03 — CORE STACK\"` in JetBrains Mono; render heading `\"Core Stack.\"` at `text-[48px] font-bold`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890576
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167129407
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167504094
+      }
+    ],
+    "10.2 Render four `CoreStackCard` sub-components in a `grid grid-cols-2 gap-6` layout from `coreStack` array": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890633
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167134237
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167509194
+      }
+    ],
+    "11.1 Render section label `\"// 04 — TECHNICAL CAPABILITIES\"` in JetBrains Mono; render heading `\"TECHNICAL CAPABILITIES.\"` at `text-[42px] font-bold uppercase`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890682
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167139074
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167513911
+      }
+    ],
+    "11.2 Render six `CapabilityCard` sub-components in a `grid grid-cols-3 gap-6 md:grid-cols-3` layout (1-col on mobile)": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890730
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167143869
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167519959
+      }
+    ],
+    "12.1 Render a white card using a 12-column grid (`grid grid-cols-12 gap-9`): left 5 cols for contact info, right 7 cols for form": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890777
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167525911
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167626710
+      }
+    ],
+    "12.2 Implement the three-field form (Name text, Email email, Message textarea) and \"Send Message\" submit button matching Figma field styles": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890825
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167530244
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167633635
+      }
+    ],
+    "12.3 Read `import.meta.env.VITE_WEB3FORMS_KEY`; when missing/empty render inline error `\"Contact form is not configured. Please set the VITE_WEB3FORMS_KEY environment variable.\"` and `disabled` submit button": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890882
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167534905
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167639460
+      }
+    ],
+    "12.4 Implement `submitStatus` state (`'idle' | 'submitting' | 'success' | 'error'`) and field validation — reject empty or whitespace-only Name, Email, or Message before submitting": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164890992
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167539787
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167644882
+      }
+    ],
+    "12.5 On valid submit: POST to `https://api.web3forms.com/submit` with `access_key`, `name`, `email`, `message` fields; on 2xx response set `submitStatus = 'success'`; on error set `submitStatus = 'error'`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891081
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167544334
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167650651
+      }
+    ],
+    "13.1 Look up the project from `content.js` using `useParams().slug`; redirect to `/` if not found (skeleton already handles this — verify and keep)": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891147
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167657147
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167748977
+      }
+    ],
+    "13.2 Render `<BackLink>` — an `<a href=\"/#work\">` with a left arrow icon and label \"Back to projects\"": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891213
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167661908
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167754496
+      }
+    ],
+    "13.3 Render the project title block: `category` badge (`bg-badge-bg text-badge-text`), `title` in Plus Jakarta Sans Bold at 40px, and `year`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891262
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167667196
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792168062600
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169059461
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169068528
+      }
+    ],
+    "13.4 Render the detail image at `h-[520px]` desktop; load from `project.detailImage`; `onError` → `<PlaceholderImage>` of same height; apply `rounded-card-lg object-cover w-full`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891310
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167671842
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169073057
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169077737
+      }
+    ],
+    "13.5 Render the white info card with `bg-white rounded-card-lg shadow-card border border-border-color p-8` in a two-column layout": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891366
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167676558
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169082282
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169086461
+      }
+    ],
+    "13.6 Render GitHub link button when `project.githubUrl !== null`; render Live Demo link button when `project.liveUrl !== null`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891416
+      },
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167681510
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169090814
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169095464
+      }
+    ],
+    "14.1 Ensure `<header>`, `<main>`, `<section>`, `<footer>`, `<nav>`, `<article>` are used appropriately in `Navbar`, `HomePage`, `ProjectDetailPage`, and `Footer`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891465
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169100799
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169173872
+      }
+    ],
+    "14.2 Confirm `index.html` has `<meta name=\"description\">` and all four Open Graph tags (`og:title`, `og:description`, `og:image`, `og:url`) — already added in task 1.2; verify values match final Figma text": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891518
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169105658
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169179145
+      }
+    ],
+    "15. Checkpoint — run the dev build and visually verify all sections": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891574
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169815333
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169844751
+      }
+    ],
+    "16.1 Install `vitest`, `@vitest/coverage-v8`, `jsdom`, `@testing-library/react`, `@testing-library/jest-dom`, `@testing-library/user-event`, and `fast-check` as dev dependencies": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891686
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169189405
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169263763
+      }
+    ],
+    "16.2 Confirm `src/test/setup.js` exists (created in task 1.6) and `vite.config.js` test block is present (added in task 1.1)": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891738
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169194048
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169268844
+      }
+    ],
+    "17.1 Write Property 1 — data-driven project card count": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891785
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169274698
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169776759
+      }
+    ],
+    "17.2 Write Property 2 — data-driven certificate card count": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891832
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169280723
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169781592
+      }
+    ],
+    "17.3 Write Property 3 — slug-based project lookup": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891880
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169285207
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169786183
+      }
+    ],
+    "17.4 Write Property 4 — contact form rejects whitespace-only input": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891929
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169593951
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169790944
+      }
+    ],
+    "17.5 Write Property 5 — PlaceholderImage preserves passed dimensions": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164891999
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169599038
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169795759
+      }
+    ],
+    "19.1 Create `CONTENT-GUIDE.md` at project root covering:": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164892053
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169860089
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170730293
+      }
+    ],
+    "19.2 Create `README.md` at project root containing: prerequisites (Node 18+), local setup (`npm install`, `npm run dev`), build command (`npm run build`), preview command (`npm run preview`), test command (`npx vitest --run`), Vercel deployment steps (import repo, set Vite preset, add `VITE_WEB3FORMS_KEY` env var), and a link to `CONTENT-GUIDE.md`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164892126
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170169343
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170736452
+      }
+    ],
+    "20.1 Run `npx vitest --run` — confirm all property-based tests and unit tests pass with zero failures": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164892187
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170741795
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792171348251
+      }
+    ],
+    "20.2 Run `npm run build` — confirm `vite build` completes with zero errors and zero warnings about missing modules": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164892250
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170746376
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792171354117
+      }
+    ],
+    "20.3 Confirm `.env` is listed in `.gitignore` and is NOT tracked by git (`git status` should not show `.env`)": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164892329
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170750970
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792171359932
+      }
+    ],
+    "20.4 Final checkpoint — Ensure all tests pass, ask the user if questions arise.": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792164892395
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792171364564
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792171369499
+      }
+    ],
+    "1. Verify and complete the project scaffold files": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165002135
+      }
+    ],
+    "2. Rewrite `src/data/content.js` with all verbatim Figma text and correct Owen Aldrich data": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165461419
+      }
+    ],
+    "3. Create shared utility components": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165776494
+      }
+    ],
+    "6. Create `src/components/Footer.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165893063
+      }
+    ],
+    "4. Create App.jsx, routing, and page skeletons": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792165913885
+      }
+    ],
+    "5. Complete `src/components/Navbar.jsx` to match the Figma design fully": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166316803
+      }
+    ],
+    "7. Create `src/components/HeroSection.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166474124
+      }
+    ],
+    "8. Create `src/components/AboutSection.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792166931660
+      }
+    ],
+    "9. Create the Work section and all child components": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167124351
+      }
+    ],
+    "10. Create `src/components/CoreStackSection.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167509376
+      }
+    ],
+    "11. Create `src/components/CapabilitiesSection.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167520105
+      }
+    ],
+    "12. Create `src/components/ContactSection.jsx`": [
+      {
+        "executionId": "e44f5efd-bce4-4a27-8b6f-f369a32be23c",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792167650853
+      }
+    ],
+    "13. Complete `src/pages/ProjectDetailPage.jsx`": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169095632
+      }
+    ],
+    "14. Apply semantic HTML and confirm SEO meta tags across all pages": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169179295
+      }
+    ],
+    "16. Install test dependencies and configure the test environment": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169269127
+      }
+    ],
+    "17. Implement all five correctness property tests in `src/test/properties.test.jsx`": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792169795985
+      }
+    ],
+    "18.1 Write unit tests for `PlaceholderImage` and `Navbar` in `src/test/layout.test.jsx`": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170175527
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170698551
+      }
+    ],
+    "18.2 Write unit tests for `WorkSection`, `TabSwitcher` in `src/test/worksection.test.jsx`": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170180341
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170704146
+      }
+    ],
+    "18.3 Write unit tests for `ProjectCard` in `src/test/projectcard.test.jsx`": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170184955
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170709492
+      }
+    ],
+    "18.4 Write unit tests for `CertificateCard` and `CertificateModal` in `src/test/certificate.test.jsx`": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170190184
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170714412
+      }
+    ],
+    "18.5 Write unit tests for `ContactSection` in `src/test/contact.test.jsx`": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170194968
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170720221
+      }
+    ],
+    "18.6 Write unit tests for `ProjectDetailPage` in `src/test/projectdetail.test.jsx`": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170199505
+      },
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170725287
+      }
+    ],
+    "18. Write unit tests covering all major components and edge cases": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170699008
+      }
+    ],
+    "19. Write project documentation files": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792170736620
+      }
+    ],
+    "20. Run final build check and verify correctness": [
+      {
+        "executionId": "3b713253-fd89-4e66-a70a-42eb8d44593b",
+        "chatSessionId": "sess_08562813-25aa-4c49-afda-4a88786d6f14",
+        "timestamp": 1792171369560
+      }
+    ]
+  }
+}
