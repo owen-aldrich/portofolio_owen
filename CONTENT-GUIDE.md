@@ -90,8 +90,8 @@ Open `src/data/content.js`, find the `projects` array, and append a new object:
   title:       'My Project — Short Title',
   description: 'One sentence shown on the card.',
   category:    '// CATEGORY LABEL',                 // e.g. '// MACHINE LEARNING'
-  coverImage:  '/images/projects/my-project/cover.jpg',
-  detailImage: '/images/projects/my-project/detail.jpg',
+  coverImage:  '/public/images/projects/my-project/cover.jpg',
+  detailImage: '/public/images/projects/my-project/detail.jpg',
   year:        '2025',
   techStack:   ['React', 'FastAPI', 'PostgreSQL'],   // rendered as pills
   features: [
@@ -109,7 +109,7 @@ Open `src/data/content.js`, find the `projects` array, and append a new object:
 
 ### Step 5 — Check the result
 
-Run `npm run dev` and navigate to `/projects/my-project` to preview the detail page, or scroll to the Work section on the home page to see the card.
+Open `index.html` with Live Server, then open the project from the Work section to preview it.
 
 ---
 
@@ -136,14 +136,14 @@ Open `src/data/content.js`, find the `certificates` array, and append a new obje
   date:        'Jan 2025',                   // display string
   grade:       '99%',                        // or null to hide the grade pill
   description: 'One sentence shown in the modal.',
-  image:       '/images/certificates/filename.jpg',
+  image:       '/public/images/certificates/filename.jpg',
   pdfUrl:      'https://link-to-pdf.com',    // or null to hide the PDF button
 },
 ```
 
 ### Step 3 — Verify
 
-Run `npm run dev`, scroll to the Work section, click the **Certificates** tab, and confirm the new card appears. Click the card to open the modal.
+Open `index.html` with Live Server, scroll to the Work section, click the **Certificates** tab, and confirm the new card appears. Click the card to open the modal.
 
 ---
 
@@ -218,7 +218,7 @@ Profile photo placeholders are shown until real images are added. Place the actu
 | Hero portrait (right column) | `public/images/profile/hero.jpg` | 460 × 540 px (portrait) |
 | About photo (square card) | `public/images/profile/about.jpg` | 720 × 720 px (1:1) |
 
-Both files should be JPG. After adding them, run `npm run dev` to confirm they load correctly.
+Both files should be JPG. After adding them, open `index.html` with Live Server to confirm they load correctly.
 
 ---
 
@@ -231,25 +231,21 @@ The contact form submits via [Web3Forms](https://web3forms.com). Without a valid
 1. Go to [web3forms.com](https://web3forms.com) and sign in.
 2. Create a new form and copy the **Access Key**.
 
-### Step 2 — Add the key locally
+### Step 2 — Add the key
 
-Open `.env` at the project root and paste your key:
+Open `index.html` and put the key in the `web3forms-key` meta tag:
 
+```html
+<meta name="web3forms-key" content="your-access-key-here" />
 ```
-VITE_WEB3FORMS_KEY=your-access-key-here
-```
 
-Restart the dev server (`npm run dev`) after editing `.env`.
+The same value is deployed with the static site. Restrict the key to your production domain in the Web3Forms dashboard.
 
-> **Note:** `.env` is listed in `.gitignore` and will never be committed to the repository. Do not share this key publicly.
-
-### Step 3 — Add the key in Vercel
+### Step 3 — Deploy to Vercel
 
 1. Open your project in the [Vercel dashboard](https://vercel.com).
-2. Go to **Settings → Environment Variables**.
-3. Add a variable named `VITE_WEB3FORMS_KEY` with your access key as the value.
-4. Set the environment to **Production** (and optionally Preview).
-5. Trigger a new deployment — the contact form will be live.
+2. Use **Framework Preset: Other**, leave **Build Command** empty, and leave **Output Directory** empty.
+3. Deploy the static site.
 
 ### Step 4 — Update the Website URL in Web3Forms
 

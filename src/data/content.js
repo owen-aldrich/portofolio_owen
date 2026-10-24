@@ -10,12 +10,12 @@ export const personal = {
   fullName:    'Owen Aldrich Setiawan',  // shown in footer and About
   name:        'Owen',                   // navbar logo (first word)
   heroName:    'Owen Aldrich S',         // exact Figma node 2:11 string
-  tagline:     'AI Engineer & Full-Stack Developer crafting scalable products, end to end, from model to interface.',
+  tagline:     'Exploring AI and software development through practical projects.',
 
   // ── Hero buttons  ─────────────────────────────────────────
   heroBtns: [
     { label: 'View projects', href: '#work',                    dark: true,  download: false },
-    { label: 'View CV',       href: '/cv/owen-aldrich-cv.pdf',  dark: false, download: true  },
+    { label: 'View CV',       href: '/public/cv/owen-aldrich-cv.pdf',  dark: false, download: false },
   ],
 
   // ── Social / contact link cards in Hero ───────────────────
@@ -28,25 +28,25 @@ export const personal = {
 
   // ── About bio (two paragraphs) ────────────────────────────
   bio: [
-    "I'm Owen Aldrich Setiawan, an AI Engineer who builds innovative intelligent systems that are proven in real-world use and measurable by results. My focus is Applied Machine Learning and AI-powered products, with full-stack development as a supporting strength to ship them as dependable digital products, from first prototype to final application.",
-    "Outside of computer science, I have strong teamwork and communication skills, and I'm interested in learning new languages. I always strive to learn new things and create technology that is both useful and easy to use.",
+    "I'm Owen Aldrich Setiawan, a Computer Science student with a strong interest in Artificial Intelligence and Software Development. I enjoy learning how intelligent systems work and applying that knowledge by building practical projects with machine learning and modern software technologies.",
+    "I'm particularly interested in Machine Learning, Computer Vision, Natural Language Processing, and Full-Stack Development. I also value teamwork, communication, and continuous learning. I'm always open to exploring new technologies, improving my skills, and gaining experience through new projects and challenges.",
   ],
 
   // ── About right-column info bar ───────────────────────────
   location: 'Indonesia',
   status:   'Open to opportunities',
-  focus:    'AI + Full-Stack Delivery',
+  focus:    'AI + Software Development',
 
   // ── About photo ───────────────────────────────────────────
   // Path:  public/images/profile/about.jpg  (1:1, ~720×720 px)
-  aboutPhoto: '/images/profile/about.jpg',
+  aboutPhoto: '/public/images/profile/about.jpg',
 
   // ── Focus chips under About bio ───────────────────────────
   focusChips: [
     'Machine Learning',
     'Computer Vision',
-    'NLP & Speech Processing',
-    'Full-Stack Engineering',
+    'Natural Language Processing',
+    'Software Development',
   ],
 
   // ── Contact section ───────────────────────────────────────
@@ -92,38 +92,14 @@ export const personal = {
 //   liveUrl      – string or null
 export const projects = [
   {
-    slug:        'vidnote',
-    title:       'VidNote — Video in, Notes Out',
-    description: 'Local app that turns any video or YouTube link into color-coded speaker subtitles, a clickable transcript, and a timestamped summary — no API key, runs fully offline.',
-    category:    '// AI / NLP',
-    coverImage:  '/images/projects/vidnote/cover.jpg',
-    detailImage: '/images/projects/vidnote/detail.jpg',
-    year:        '2025',
-    techStack:   ['Python', 'Whisper', 'Ollama', 'Gemma', 'FFmpeg'],
-    features: [
-      { title: 'Speaker diarization',     description: 'Transcript automatically split and color-coded per speaker using pyannote.' },
-      { title: 'Hardsubbed video output', description: 'Colored subtitles burned directly into the video via FFmpeg using NVENC or libx264.' },
-      { title: 'Timestamped summary',     description: 'Key points and conclusion generated locally by Ollama (Gemma), with clickable timestamps.' },
-      { title: 'Fully offline pipeline',  description: 'No API key or internet connection required after the one-time model download.' },
-      { title: 'Web UI and CLI',          description: 'Three-step browser interface (Source → Process → Result) plus a headless CLI mode for scripting.' },
-    ],
-    outcomes: [
-      { title: 'No recurring cost',        description: 'Runs entirely on local hardware — no API fees, no subscriptions, no data sent to third parties.' },
-      { title: 'Works on any machine',     description: 'GPU accelerates processing; CPU fallback means it runs on any laptop without special hardware.' },
-      { title: 'Ready-to-use output',      description: 'Each run produces a hardsubbed video, multiple subtitle formats, and a timestamped summary in one go.' },
-    ],
-    githubUrl: 'https://github.com/owen-aldrich/VidNote',
-    liveUrl:   null,
-  },
-  {
     slug:        'smart-demand',
     title:       'SmartDemand — Sales Volume Prediction',
     description: 'Random Forest ML model trained on the Brazilian E-Commerce (Olist) dataset that predicts monthly sales volume per product category based on pricing, quality, and market factors.',
     category:    '// MACHINE LEARNING',
-    coverImage:  '/images/projects/smart-demand/cover.jpg',
-    detailImage: '/images/projects/smart-demand/detail.jpg',
+    coverImage:  '/public/images/projects/smart-demand/cover.jpg',
+    detailImage: '/public/images/projects/smart-demand/detail.jpg',
     year:        '2025',
-    techStack:   ['Python', 'Scikit-Learn', 'FastAPI', 'HTML', 'CSS', 'Railway'],
+    techStack:   ['Python', 'Scikit-Learn', 'FastAPI', 'HTML', 'CSS', 'Vanilla JavaScript'],
     features: [
       { title: 'Random Forest model',           description: 'Trained on the Olist Brazilian e-commerce dataset to predict monthly sales volume per product category.' },
       { title: 'Category-level target',         description: 'Target aggregated per category per month, which reduces noise compared with product-level sales.' },
@@ -132,7 +108,7 @@ export const projects = [
     ],
     outcomes: [
       { title: 'R² 0.9541, MAE 8.92 on test set', description: 'Forecasts monthly category sales volume, outperforming a Linear Regression baseline (R² 0.9445) on held-out data.' },
-      { title: 'Deployed as a public web app',     description: 'FastAPI app live on Railway — accessible in the browser without a local Python setup.' },
+      { title: 'Runnable locally', description: 'The FastAPI app, trained models, and setup instructions are included so users can run predictions locally.' },
     ],
     githubUrl: 'https://github.com/owen-aldrich/Smart-Demand',
     liveUrl:   null,
@@ -140,22 +116,22 @@ export const projects = [
   {
     slug:        'toxicheck',
     title:       'ToxiCheck — Indonesian Hate Speech Detector',
-    description: 'Web app that classifies Indonesian tweets into Hate Speech, Abusive, or Neutral using four ML models (Naive Bayes, K-NN, Logistic Regression, SVM) with a majority-vote mechanism and Streamlit UI.',
+    description: 'Web app that classifies Indonesian text into Hate Speech, Abusive, or Neutral using four ML models (Naive Bayes, K-NN, Logistic Regression, and SVM) with majority voting and a Gradio interface.',
     category:    '// NLP / MACHINE LEARNING',
-    coverImage:  '/images/projects/toxicheck/cover.jpg',
-    detailImage: '/images/projects/toxicheck/detail.jpg',
+    coverImage:  '/public/images/projects/toxicheck/cover.jpg',
+    detailImage: '/public/images/projects/toxicheck/detail.jpg',
     year:        '2025',
-    techStack:   ['Python', 'Scikit-Learn', 'Streamlit', 'NLTK', 'PySastrawi', 'Docker'],
+    techStack:   ['Python', 'Scikit-Learn', 'Gradio', 'NLTK', 'PySastrawi'],
     features: [
-      { title: 'Four-model ensemble',          description: 'Naive Bayes, K-NN, Logistic Regression, and linear SVM with majority vote; SVM breaks 2-2 ties.' },
-      { title: 'Indonesian NLP preprocessing', description: 'Slang normalization via Kamus Alay, NLTK stopword removal, and PySastrawi stemming.' },
-      { title: 'Dual vectorization',           description: 'CountVectorizer for Naive Bayes and TF-IDF for the other three models.' },
-      { title: 'Streamlit UI',                 description: 'Shows per-model predictions and the vote distribution for every input.' },
+      { title: 'Four-model ensemble',          description: 'Naive Bayes, K-NN, Logistic Regression, and linear SVM with majority voting; SVM resolves 2–2 ties.' },
+      { title: 'Indonesian NLP preprocessing', description: 'Slang normalization using Kamus Alay, NLTK stopword removal, and PySastrawi stemming.' },
+      { title: 'Dual vectorization',           description: 'CountVectorizer for Naive Bayes and TF-IDF for K-NN, Logistic Regression, and SVM.' },
+      { title: 'Gradio web interface',         description: 'Displays predictions from all four models and the final majority-vote result for each input.' },
     ],
     outcomes: [
-      { title: 'Single decision for every input',        description: 'Labels Indonesian tweets as Neutral, Abusive, or Hate Speech — majority vote always produces one result.' },
-      { title: 'SVM: 81.66% accuracy, 0.7865 macro F1', description: 'Highest of the four models on 2,634 held-out tweets.' },
-      { title: 'One-command Docker deployment',          description: 'Runs in a container without installing Python or any dependencies.' },
+      { title: 'Single decision for every input',                         description: 'Classifies Indonesian text as Neutral, Abusive, or Hate Speech using ensemble majority voting.' },
+      { title: 'Logistic Regression: 81.93% accuracy, 0.7909 Macro F1',   description: 'Achieved the best performance on 2,634 held-out test samples.' },
+      { title: 'Hugging Face Spaces deployment',                         description: 'Provides an accessible Gradio-based web application that runs directly in the browser.' },
     ],
     githubUrl: 'https://github.com/owen-aldrich/ToxiCheck',
     liveUrl:   'https://huggingface.co/spaces/AldRichss/ToxiCheck',
@@ -165,8 +141,8 @@ export const projects = [
     title:       'School Uniform Attribute Detection',
     description: 'Real-time computer vision app that detects school uniform attributes (tie, school badge, hat, belt) from a live webcam feed using HOG feature extraction and an SVM classifier with sliding window.',
     category:    '// COMPUTER VISION',
-    coverImage:  '/images/projects/school-uniform-detection/cover.jpg',
-    detailImage: '/images/projects/school-uniform-detection/detail.png',
+    coverImage:  '/public/images/projects/school-uniform-detection/cover.jpg',
+    detailImage: '/public/images/projects/school-uniform-detection/detail.png',
     year:        '2025',
     techStack:   ['Python', 'OpenCV', 'Scikit-Learn', 'Scikit-Image', 'NumPy'],
     features: [
@@ -187,47 +163,47 @@ export const projects = [
   {
     slug:        'sss-dealer',
     title:       'SSS+Dealer — Luxury Car Dealership Platform',
-    description: 'Full-stack luxury and sports car dealership platform with browsing, filtering, side-by-side comparison, favorites, and online test drive booking — plus a full admin panel.',
+    description: 'Full-stack luxury and sports car dealership platform with live inventory status, protected user accounts, favorites, comparisons, test-drive booking, and an admin dashboard.',
     category:    '// FULL-STACK WEB',
-    coverImage:  '/images/projects/sss-dealer/cover.jpg',
-    detailImage: '/images/projects/sss-dealer/detail.jpg',
+    coverImage:  '/public/images/projects/sss-dealer/cover.jpg',
+    detailImage: '/public/images/projects/sss-dealer/detail.jpg',
     year:        '2025',
-    techStack:   ['Node.js', 'Express', 'Prisma', 'PostgreSQL', 'JWT', 'HTML', 'CSS', 'JavaScript'],
+    techStack:   ['HTML', 'CSS', 'Vanilla JavaScript', 'Node.js', 'Express.js', 'MySQL/TiDB Cloud', 'JWT'],
     features: [
-      { title: 'Car catalog with filters',  description: 'Browse 18 seeded luxury and sports cars; filter by brand, type, price range, and drivetrain.' },
-      { title: 'Side-by-side comparison',   description: 'Compare any two cars on full specifications in a structured table; compare history saved per user account.' },
-      { title: 'Favorites list',            description: 'Logged-in users can toggle favorites on any car and view them in the account dashboard.' },
-      { title: 'Test drive booking',        description: 'Booking form open to both guests and logged-in users; submissions stored in the database and managed from the admin panel.' },
-      { title: 'Admin panel',               description: 'Full CRUD for car listings, lead management, and test drive schedule — protected by admin role middleware.' },
+      { title: 'Car catalog & status',        description: 'Filter cars by brand, type, and price; available and reserved vehicles show clear status badges.' },
+      { title: 'Compare & favorites',         description: 'Compare two cars side by side and save favorites with a signed-in account.' },
+      { title: 'Test-drive booking',          description: 'Authenticated users book available cars while occupied slots and reserved cars are blocked.' },
+      { title: 'User accounts',               description: 'JWT sign-in, profile editing, and Cloudinary profile-photo uploads.' },
+      { title: 'Admin dashboard',             description: 'Manage car listings, images, test drives, and customer leads through protected routes.' },
     ],
     outcomes: [
-      { title: 'Covers the full buyer journey', description: 'From browsing and comparing to booking a test drive — all flows work end-to-end in a single application.' },
-      { title: 'Secure by default',             description: 'JWT middleware protects all user-specific and admin routes; passwords hashed with bcrypt.' },
-      { title: 'Easy to extend',                description: 'Prisma schema and seeded data make it straightforward to add new car listings or expand filtering without touching frontend logic.' },
+      { title: 'Complete buyer flow',         description: 'From discovery and comparison to favorites and test-drive booking.' },
+      { title: 'Accurate availability',       description: 'Four inventory states keep sold and draft vehicles off the public catalog.' },
+      { title: 'Deployment-ready stack',      description: 'Node.js and Express.js power the backend, with MySQL/TiDB Cloud for data storage and JWT for authentication.' },
     ],
     githubUrl: 'https://github.com/owen-aldrich/SSS-Dealer',
-    liveUrl:   null,
+    liveUrl:   'https://sss-dealer-production.up.railway.app/',
   },
   {
     slug:        'tutor-in',
     title:       'Tutor-In — Peer Tutoring Platform',
     description: 'Commercial 1-on-1 peer tutoring platform connecting students (mentees) with high-achieving student mentors, featuring escrow payments, Discord-based sessions, and mentor wallets.',
     category:    '// FULL-STACK WEB',
-    coverImage:  '/images/projects/tutor-in/cover.jpg',
-    detailImage: '/images/projects/tutor-in/detail.jpg',
+    coverImage:  '/public/images/projects/tutor-in/cover.jpg',
+    detailImage: '/public/images/projects/tutor-in/detail.jpg',
     year:        '2025',
-    techStack:   ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'NextAuth', 'Tailwind', 'Zod'],
+    techStack:   ['React 19', 'JavaScript', 'Vite', 'Express.js', 'MySQL', 'Tailwind CSS', 'JWT', 'Zod'],
     features: [
-      { title: 'Tutor discovery and booking', description: 'Public directory with search and filters by subject, hourly rate, and rating; each profile shows available slots and a booking button.' },
-      { title: 'Escrow payment flow',         description: 'Funds held via payment gateway (Midtrans/Xendit) and released to the mentor wallet only after the session is automatically marked complete.' },
-      { title: 'Mentor wallet and payout',    description: 'Mentors track available balance, on-hold funds, and transaction history; withdrawals via bank transfer with no minimum or admin fee.' },
-      { title: 'In-app notification system',  description: 'Notifications sent for every key event — new booking, payment confirmed, session complete, new review, and payout — each with full context.' },
-      { title: 'Role-based dashboards',       description: 'Separate dashboards for Mentee and Mentor roles; route protection enforced via a custom proxy middleware.' },
+      { title: 'Tutor discovery and booking', description: 'Students can search mentors by subject, hourly rate, and rating, view available time slots, and book tutoring sessions.' },
+      { title: 'Simulated escrow workflow',   description: 'A mock payment flow holds funds until a session is completed, demonstrating the transaction lifecycle without processing real payments.' },
+      { title: 'Mentor wallet and payout',    description: 'Mentors can monitor available and pending balances, view transaction history, and simulate withdrawal requests.' },
+      { title: 'Notifications and reviews',   description: 'Users receive contextual booking and transaction notifications, while students can review mentors after completed sessions.' },
+      { title: 'Role-based dashboards',       description: 'Separate student and mentor experiences with scheduling, session management, and protected access using JWT authentication and role authorization.' },
     ],
     outcomes: [
-      { title: 'Both sides are protected',      description: 'Escrow holds funds until session completion — students are not charged for no-shows and mentors are guaranteed payment for completed sessions.' },
-      { title: 'Mentors can earn without admin overhead', description: 'Wallet, payout, and session tracking are handled by the platform, so mentors focus on teaching rather than managing payments.' },
-      { title: 'Transparent fee structure',     description: 'The 8% service fee is added on top of the mentor rate and shown at checkout — mentors always receive their full listed rate.' },
+      { title: 'Safer transaction experience',  description: 'The escrow-inspired workflow clearly separates payment, held funds, session completion, and mentor balance states.' },
+      { title: 'Streamlined mentor operations', description: 'Scheduling, session tracking, wallet information, and payout requests are consolidated into one dedicated dashboard.' },
+      { title: 'Transparent platform pricing',  description: 'An 8% service fee is shown separately at checkout while mentors retain their full listed hourly rate.' },
     ],
     githubUrl: 'https://github.com/owen-aldrich/Tutor-In',
     liveUrl:   null,
@@ -260,8 +236,8 @@ export const certificates = [
     date:        'Jul 2026',
     grade:       'C2.2',
     description: 'Verified Certificate — completed English course at CEFR C2.2 level with a passing grade. Certificate ID: 2026-C-sayuwmw0AhguF.',
-    image:       '/images/certificates/market research belingua.png',
-    pdfUrl:      '/images/certificates/Beelingua-2026-C-sayuwmw0AhguF (1).pdf',
+    image:       '/public/images/certificates/market research belingua.png',
+    pdfUrl:      '/public/images/certificates/Beelingua-2026-C-sayuwmw0AhguF (1).pdf',
   },
   {
     id:          'beelingua-c1-professional-office',
@@ -271,8 +247,8 @@ export const certificates = [
     date:        'Jun 2026',
     grade:       'C1.2',
     description: 'Verified Certificate — completed English course at CEFR C1.2 level with a passing grade. Certificate ID: 2026-C-pFs7K38MIrcU5.',
-    image:       '/images/certificates/preofessional office belingua.png',
-    pdfUrl:      '/images/certificates/Beelingua-2026-C-pFs7K38MIrcU5.pdf',
+    image:       '/public/images/certificates/preofessional office belingua.png',
+    pdfUrl:      '/public/images/certificates/Beelingua-2026-C-pFs7K38MIrcU5.pdf',
   },
   {
     id:          'microsoft-azure-ai-900',
@@ -282,8 +258,8 @@ export const certificates = [
     date:        'Mar 2026',
     grade:       null,
     description: 'Certificate of Completion — 15 hours of Azure AI Fundamentals training (AI-900T00-A), signed by Microsoft Indonesia and GreatNusa. Cert No: 111541121814949/GreatNusa/III/2026.',
-    image:       '/images/certificates/greatnusa.png',
-    pdfUrl:      '/images/certificates/1115.85.41121.pdf',
+    image:       '/public/images/certificates/greatnusa.png',
+    pdfUrl:      '/public/images/certificates/1115.85.41121.pdf',
   },
   {
     id:          'bncc-activist-37',
@@ -293,7 +269,7 @@ export const certificates = [
     date:        'Sep 2026',
     grade:       null,
     description: 'Certificate of Completion for demonstrating exceptional commitment, teamwork, and innovation as an Activist of the 37th Board of Bina Nusantara Computer Club. #VIVABNCC.',
-    image:       '/images/certificates/Owen Aldrich Setiawan (1).png',
+    image:       '/public/images/certificates/Owen Aldrich Setiawan (1).png',
     pdfUrl:      null,
   },
 ];
@@ -311,7 +287,6 @@ export const coreStack = [
     items: [
       { name: 'Python',     icon: 'python.svg'     },
       { name: 'JavaScript', icon: 'javascript.svg' },
-      { name: 'Java',       icon: 'java.svg'       },
       { name: 'C',          icon: 'c-lang.svg'     },
     ],
   },
@@ -319,8 +294,6 @@ export const coreStack = [
     title:    'AI & Machine Learning',
     subtitle: '// Intelligent Systems & Models',
     items: [
-      { name: 'TensorFlow',   icon: 'tensorflow.svg'  },
-      { name: 'PyTorch',      icon: 'pytorch.svg'     },
       { name: 'HuggingFace',  icon: 'huggingface.svg' },
       { name: 'NumPy',        icon: 'numpy.svg'       },
       { name: 'Pandas',       icon: 'pandas.svg'      },
@@ -330,10 +303,9 @@ export const coreStack = [
     title:    'Web Development',
     subtitle: '// Interactive Web Interfaces',
     items: [
-      { name: 'React',   icon: 'react.svg'    },
-      { name: 'Tailwind',icon: 'tailwind.svg' },
       { name: 'HTML5',   icon: 'html5.svg'    },
       { name: 'CSS3',    icon: 'css3.svg'     },
+      { name: 'JavaScript', icon: 'javascript.svg' },
     ],
   },
   {
@@ -342,20 +314,16 @@ export const coreStack = [
     items: [
       { name: 'Node.js',    icon: 'nodejs.svg'     },
       { name: 'Express',    icon: 'express.svg'    },
-      { name: 'FastAPI',    icon: 'fastapi.svg'    },
-      { name: 'PostgreSQL', icon: 'postgresql.svg' },
       { name: 'MySQL',      icon: 'mysql.svg'      },
-      { name: 'Prisma',     icon: 'prisma.svg'     },
-      { name: 'Supabase',   icon: 'supabase.svg'   },
     ],
   },
   {
-    title:    'DevOps & Cloud',
-    subtitle: '// Infrastructure & Deployment',
+    title:    'Tools & Platforms',
+    subtitle: '// Coding, Collaboration & Notebooks',
     items: [
-      { name: 'Docker', icon: 'docker.svg' },
-      { name: 'Git',    icon: 'git.svg'    },
-      { name: 'Vercel', icon: 'vercel.svg' },
+      { name: 'GitHub',             icon: 'github.svg'       },
+      { name: 'Google Colab',       icon: 'google-colab.svg' },
+      { name: 'Visual Studio Code', icon: 'vscode.svg'       },
     ],
   },
 ];
@@ -391,8 +359,8 @@ export const capabilities = [
   },
   {
     number:      '06',
-    title:       ['SOFTWARE', 'ENGINEERING'],
-    description: 'Scalable full-stack systems, modern responsive interfaces, robust APIs, and cloud deployments.',
+    title:       ['SOFTWARE', 'DEVELOPER'],
+    description: 'Building responsive web applications, clean user interfaces, and reliable APIs from frontend to backend.',
   },
 ];
 

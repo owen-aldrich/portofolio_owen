@@ -1,3 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
-  <path fill="#A8B9CC" d="M16.5 12c0-1.5-.4-2.9-1.2-4.1L12 12l3.3 4.1c.8-1.2 1.2-2.6 1.2-4.1zm-4.5 6c-1.5 0-2.9-.5-4-1.4l-1.4 1.4C8.2 19.2 10 20 12 20c3.9 0 7.1-2.8 7.8-6.5H12v-3h7.8C19.1 6.8 15.9 4 12 4 10 4 8.2 4.8 6.9 6l1.4 1.4C9.4 6.5 10.6 6 12 6c2.8 0 5.1 2.1 5.5 4.8H12V14h7.8c-.4 1.2-1.1 2.3-2 3.2L12 18z"/>
+  <circle cx="12" cy="12" r="11" fill="#555"/><text x="12" y="19" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#fff">C</text>
 </svg>

@@ -2,21 +2,240 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Owen Aldrich Setiawan — AI Engineer & Full-Stack Developer crafting scalable products, end to end, from model to interface." />
+    <meta name="description" content="Owen Aldrich Setiawan — Exploring AI and software development through practical projects." />
     <meta property="og:title" content="Owen Aldrich Setiawan" />
-    <meta property="og:description" content="AI Engineer & Full-Stack Developer crafting scalable products, end to end, from model to interface." />
+    <meta property="og:description" content="Exploring AI and software development through practical projects." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,700;1,6..72,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/overrides.css" />
+    <meta name="web3forms-key" content="" />
     <title>Owen Aldrich Setiawan</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="navbar">
+      <div class="nav-pill">
+        <a class="logo" href="index.html">Owen</a>
+        <nav class="desktop-nav">
+          <a href="#about">About</a><a href="#work">Work</a>
+          <a href="#stack">Stack</a><a href="#capabilities">Capabilities</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="contact-cta" href="#contact">Get in Touch</a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#about">About</a><a href="#work">Work</a>
+        <a href="#stack">Stack</a><a href="#capabilities">Capabilities</a>
+        <a href="#contact">Contact</a>
+        <a class="contact-cta" href="#contact">Get in Touch</a>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>Owen Aldrich S</h1>
+            <p>Exploring AI and software development through practical projects.</p>
+            <div class="hero-buttons">
+              <a class="button dark" href="#work">View projects</a>
+              <a class="button outline" id="view-cv" href="/public/cv/owen-aldrich-cv.pdf">View CV</a>
+            </div>
+            <div class="hero-links">
+              <a href="https://github.com/owen-aldrich" target="_blank" rel="noopener noreferrer">
+                <span class="icon-box"><img src="/src/assets/icons/github.svg" alt="GitHub"></span>
+                <span><code>GitHub</code><b>github.com/owen-aldrich</b></span>
+              </a>
+              <a href="https://mail.google.com/mail/?view=cm&amp;to=owenaldrichsetiawan@gmail.com" target="_blank" rel="noopener noreferrer">
+                <span class="icon-box"><img src="/src/assets/icons/mail.svg" alt="Email"></span>
+                <span><code>Email</code><b>owenaldrichsetiawan@gmail.com</b></span>
+              </a>
+              <a href="https://www.linkedin.com/in/owen-aldrich-setiawan" target="_blank" rel="noopener noreferrer">
+                <span class="icon-box"><img src="/src/assets/icons/linkedin.svg" alt="LinkedIn"></span>
+                <span><code>LinkedIn</code><b>linkedin.com/in/owen-aldrich-setiawan</b></span>
+              </a>
+            </div>
+          </div>
+          <div class="portrait"><img src="/public/images/profile/hero.jpg" alt="Owen Aldrich Setiawan"></div>
+        </div>
+      </section>
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div>
+            <code class="section-label">// 01 — ABOUT</code>
+            <div class="about-heading"><h2>AI &amp; Software Developer</h2><p>committed to delivering reliable and impactful digital solutions</p></div>
+            <div class="bio">
+              <p>I'm Owen Aldrich Setiawan, a Computer Science student with a strong interest in Artificial Intelligence and Software Development. I enjoy learning how intelligent systems work and applying that knowledge by building practical projects with machine learning and modern software technologies.</p>
+              <p>I'm particularly interested in Machine Learning, Computer Vision, Natural Language Processing, and Full-Stack Development. I also value teamwork, communication, and continuous learning. I'm always open to exploring new technologies, improving my skills, and gaining experience through new projects and challenges.</p>
+            </div>
+            <div class="chips">
+              <span class="chip">Machine Learning</span><span class="chip">Computer Vision</span>
+              <span class="chip">Natural Language Processing</span><span class="chip">Software Development</span>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="about-photo"><img src="/public/images/profile/about.jpg" alt="Owen Aldrich Setiawan"></div>
+            <div class="info-bar">
+              <div><code>Location</code><b>Indonesia</b></div>
+              <div><code>Status</code><b>Open to opportunities</b></div>
+              <div><code>Focus</code><b>AI + Software Development</b></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="work" class="section">
+        <div class="container">
+          <div class="work-header">
+            <div><code class="section-label">// 02 — PORTFOLIO</code><h2>Work &amp; learning<span>.</span></h2></div>
+            <p>Projects that put ideas into practice.<br>Credentials that support the journey.</p>
+          </div>
+          <div class="tabs">
+            <button class="active" data-tab="projects">Projects</button>
+            <button data-tab="certificates">Certificates</button>
+          </div>
+          <div id="projects-panel" class="card-grid">
+            <article class="project-card">
+              <div class="card-image"><img src="/public/images/projects/smart-demand/cover.jpg" alt="SmartDemand — Sales Volume Prediction"></div>
+              <div class="card-content"><span class="badge">// MACHINE LEARNING</span><h3>SmartDemand — Sales Volume Prediction</h3>
+                <p>Random Forest ML model trained on the Brazilian E-Commerce (Olist) dataset that predicts monthly sales volume per product category based on pricing, quality, and market factors.</p>
+                <div class="card-actions"><a class="button" href="project.html?id=smart-demand">View details</a><span class="button disabled">Live Demo</span><a class="button" href="https://github.com/owen-aldrich/Smart-Demand" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="card-image"><img src="/public/images/projects/toxicheck/cover.jpg" alt="ToxiCheck — Indonesian Hate Speech Detector"></div>
+              <div class="card-content"><span class="badge">// NLP / MACHINE LEARNING</span><h3>ToxiCheck — Indonesian Hate Speech Detector</h3>
+                <p>Web app that classifies Indonesian text into Hate Speech, Abusive, or Neutral using four ML models with majority voting and a Gradio interface.</p>
+                <div class="card-actions"><a class="button" href="project.html?id=toxicheck">View details</a><a class="button" href="https://huggingface.co/spaces/AldRichss/ToxiCheck" target="_blank" rel="noopener noreferrer">Live Demo</a><a class="button" href="https://github.com/owen-aldrich/ToxiCheck" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="card-image"><img src="/public/images/projects/school-uniform-detection/cover.jpg" alt="School Uniform Attribute Detection"></div>
+              <div class="card-content"><span class="badge">// COMPUTER VISION</span><h3>School Uniform Attribute Detection</h3>
+                <p>Real-time computer vision app that detects school uniform attributes from a live webcam feed using HOG feature extraction and an SVM classifier with sliding window.</p>
+                <div class="card-actions"><a class="button" href="project.html?id=school-uniform-detection">View details</a><span class="button disabled">Live Demo</span><a class="button" href="https://github.com/owen-aldrich/School-Uniform-Attribute-Detection" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="card-image"><img src="/public/images/projects/sss-dealer/cover.jpg" alt="SSS+Dealer — Luxury Car Dealership Platform"></div>
+              <div class="card-content"><span class="badge">// FULL-STACK WEB</span><h3>SSS+Dealer — Luxury Car Dealership Platform</h3>
+                <p>Full-stack luxury and sports car dealership platform with live inventory status, protected user accounts, favorites, comparisons, test-drive booking, and an admin dashboard.</p>
+                <div class="card-actions"><a class="button" href="project.html?id=sss-dealer">View details</a><a class="button" href="https://sss-dealer-production.up.railway.app/" target="_blank" rel="noopener noreferrer">Live Demo</a><a class="button" href="https://github.com/owen-aldrich/SSS-Dealer" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="card-image"><img src="/public/images/projects/tutor-in/cover.jpg" alt="Tutor-In — Peer Tutoring Platform"></div>
+              <div class="card-content"><span class="badge">// FULL-STACK WEB</span><h3>Tutor-In — Peer Tutoring Platform</h3>
+                <p>Commercial 1-on-1 peer tutoring platform connecting students with high-achieving mentors, featuring escrow payments, Discord-based sessions, and mentor wallets.</p>
+                <div class="card-actions"><a class="button" href="project.html?id=tutor-in">View details</a><span class="button disabled">Live Demo</span><a class="button" href="https://github.com/owen-aldrich/Tutor-In" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+              </div>
+            </article>
+          </div>
+          <div id="certificates-panel" class="card-grid hidden">
+            <article class="certificate-card" tabindex="0" data-certificate="beelingua-c2-market-research">
+              <div class="card-image certificate-image"><img src="/public/images/certificates/market research belingua.png" alt="Market Research &amp; Business Communication (V2)"></div>
+              <div class="card-content"><span class="badge">Beelingua · Binus University</span><h3>Market Research &amp; Business Communication (V2)</h3><div class="metadata"><span>Beelingua</span><code>Jul 2026</code></div><span class="chip">Grade: C2.2</span></div>
+            </article>
+            <article class="certificate-card" tabindex="0" data-certificate="beelingua-c1-professional-office">
+              <div class="card-image certificate-image"><img src="/public/images/certificates/preofessional office belingua.png" alt="Professional Office (V2)"></div>
+              <div class="card-content"><span class="badge">Beelingua · Binus University</span><h3>Professional Office (V2)</h3><div class="metadata"><span>Beelingua</span><code>Jun 2026</code></div><span class="chip">Grade: C1.2</span></div>
+            </article>
+            <article class="certificate-card" tabindex="0" data-certificate="microsoft-azure-ai-900">
+              <div class="card-image certificate-image"><img src="/public/images/certificates/greatnusa.png" alt="Microsoft Elevate AI Training Session"></div>
+              <div class="card-content"><span class="badge">Microsoft · Binus University · GreatNusa</span><h3>Microsoft Elevate AI Training Session</h3><div class="metadata"><span>GreatNusa</span><code>Mar 2026</code></div></div>
+            </article>
+            <article class="certificate-card" tabindex="0" data-certificate="bncc-activist-37">
+              <div class="card-image certificate-image"><img src="/public/images/certificates/Owen Aldrich Setiawan (1).png" alt="Activist — 37th Board of BNCC"></div>
+              <div class="card-content"><span class="badge">Bina Nusantara Computer Club</span><h3>Activist — 37th Board of BNCC</h3><div class="metadata"><span>BNCC</span><code>Sep 2026</code></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="stack" class="section">
+        <div class="container">
+          <code class="section-label">// 03 — CORE STACK</code><h2>Core Stack.</h2>
+          <div id="stack-list" class="stack-list">
+            <div class="stack-row"><div><h3>Languages</h3><code>// Programming Languages</code></div><div class="stack-icons">
+              <span class="stack-icon" data-tooltip="Python"><img src="https://cdn.simpleicons.org/python" alt="Python"></span><span class="stack-icon" data-tooltip="JavaScript"><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript"></span><span class="stack-icon" data-tooltip="C"><img src="https://cdn.simpleicons.org/c" alt="C"></span>
+            </div></div>
+            <div class="stack-row"><div><h3>AI &amp; Machine Learning</h3><code>// Intelligent Systems &amp; Models</code></div><div class="stack-icons">
+              <span class="stack-icon" data-tooltip="NumPy"><img src="https://cdn.simpleicons.org/numpy" alt="NumPy"></span><span class="stack-icon" data-tooltip="Pandas"><img src="https://cdn.simpleicons.org/pandas" alt="Pandas"></span><span class="stack-icon" data-tooltip="Scikit-learn"><img src="https://cdn.simpleicons.org/scikitlearn" alt="Scikit-learn"></span>
+            </div></div>
+            <div class="stack-row"><div><h3>Web Development</h3><code>// Interactive Web Interfaces</code></div><div class="stack-icons">
+              <span class="stack-icon" data-tooltip="HTML"><img src="https://cdn.simpleicons.org/html5" alt="HTML"></span><span class="stack-icon" data-tooltip="CSS"><img src="https://cdn.simpleicons.org/css" alt="CSS"></span><span class="stack-icon" data-tooltip="JavaScript"><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript"></span>
+            </div></div>
+            <div class="stack-row"><div><h3>Backend &amp; Database</h3><code>// Scalable Server Architectures</code></div><div class="stack-icons">
+              <span class="stack-icon" data-tooltip="Node.js"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js"></span><span class="stack-icon" data-tooltip="Express"><img src="https://cdn.simpleicons.org/express" alt="Express"></span><span class="stack-icon" data-tooltip="MySQL"><img src="https://cdn.simpleicons.org/mysql" alt="MySQL"></span>
+            </div></div>
+            <div class="stack-row"><div><h3>Tools &amp; Platforms</h3><code>// Coding, Collaboration &amp; Notebooks</code></div><div class="stack-icons">
+              <span class="stack-icon" data-tooltip="GitHub"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></span><span class="stack-icon" data-tooltip="Google Colab"><img src="https://cdn.simpleicons.org/googlecolab" alt="Google Colab"></span><span class="stack-icon" data-tooltip="Visual Studio Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="Visual Studio Code"></span>
+            </div></div>
+          </div>
+        </div>
+      </section>
+      <section id="capabilities" class="section">
+        <div class="container">
+          <code class="section-label">// 04 — TECHNICAL CAPABILITIES</code>
+          <h2 class="caps-title">TECHNICAL CAPABILITIES.</h2>
+          <div id="capabilities-list" class="capabilities">
+            <article><code>01</code><h3>MACHINE<br>LEARNING</h3><p>Predictive modeling, regression, neural pipelines, and algorithmic solutions.</p></article>
+            <article><code>02</code><h3>DEEP<br>LEARNING</h3><p>Multi-layered neural architectures, transformer models, and custom model fine-tuning.</p></article>
+            <article><code>03</code><h3>COMPUTER<br>VISION</h3><p>Real-time object detection, image classification, pose tracking, and edge perception.</p></article>
+            <article><code>04</code><h3>NLP &amp;<br>GENERATIVE AI</h3><p>Large Language Models, agentic workflows, contextual RAG, and prompt orchestration.</p></article>
+            <article><code>05</code><h3>DATA<br>ANALYSIS</h3><p>High-dimensional data processing, statistical modeling, insights, and feature engineering.</p></article>
+            <article><code>06</code><h3>SOFTWARE<br>DEVELOPER</h3><p>Building responsive web applications, clean user interfaces, and reliable APIs from frontend to backend.</p></article>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="contact-card">
+            <div class="contact-copy">
+              <code class="section-label">// 05 — CONTACT</code>
+              <h2>Get in touch.</h2>
+              <p>Have a project in mind or just want to say hello? Drop me a message and I'll get back to you.</p>
+              <div><code>Email</code><a href="mailto:owenaldrichsetiawan@gmail.com">owenaldrichsetiawan@gmail.com</a></div>
+              <div><code>Socials</code>
+                <a class="social" href="https://github.com/owen-aldrich" target="_blank" rel="noopener noreferrer"><span class="icon-box"><img src="/src/assets/icons/github.svg" alt=""></span>GitHub</a>
+                <a class="social" href="https://www.linkedin.com/in/owen-aldrich-setiawan" target="_blank" rel="noopener noreferrer"><span class="icon-box"><img src="/src/assets/icons/linkedin.svg" alt=""></span>LinkedIn</a>
+                <a class="social" href="https://mail.google.com/mail/?view=cm&amp;to=owenaldrichsetiawan@gmail.com" target="_blank" rel="noopener noreferrer"><span class="icon-box"><img src="/src/assets/icons/mail.svg" alt=""></span>Email</a>
+              </div>
+            </div>
+            <form id="contact-form" novalidate>
+              <div id="form-status"></div>
+              <label>Name<input name="name" placeholder="Your name"></label>
+              <label>Email<input type="email" name="email" placeholder="your@email.com"></label>
+              <label>Message<textarea name="message" rows="5" placeholder="Tell me about your project or just say hello…"></textarea></label>
+              <button class="button dark" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <div><strong>Owen Aldrich Setiawan</strong><span class="dot">·</span><span>© 2026 Owen Aldrich. All rights reserved.</span></div>
+        <nav><a href="#work">Projects</a><a href="#about">About</a><a href="#contact">Contact</a><a href="mailto:owenaldrichsetiawan@gmail.com">Email</a></nav>
+      </div>
+    </footer>
+    <div id="modal-root"></div>
+    <dialog id="cv-modal" class="modal cv-modal" aria-labelledby="cv-modal-title">
+      <header>
+        <h2 id="cv-modal-title">CV - Owen Aldrich Setiawan</h2>
+        <button type="button" id="close-cv" aria-label="Close CV">×</button>
+      </header>
+      <div class="cv-preview-scroll">
+        <img class="cv-preview" src="/public/cv/owen-aldrich-cv.webp" alt="CV of Owen Aldrich Setiawan" />
+      </div>
+      <div class="cv-modal-footer">
+        <a href="/public/cv/owen-aldrich-cv.pdf" target="_blank" rel="noopener noreferrer">Open PDF directly</a>
+        <a class="button dark" href="/public/cv/owen-aldrich-cv.pdf" download="CV-Owen Aldrich S.pdf">Download CV</a>
+      </div>
+    </dialog>
+    <script type="module" src="/src/js/app.js"></script>
   </body>
 </html>
