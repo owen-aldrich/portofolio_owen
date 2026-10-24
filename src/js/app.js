@@ -124,6 +124,7 @@ function configureCvModal() {
 function configureContactForm() {
   const form = document.querySelector('#contact-form');
   const formKey = document.querySelector('meta[name="web3forms-key"]')?.content.trim();
+  const submitButton = form.querySelector('button[type="submit"]');
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -144,6 +145,7 @@ function configureContactForm() {
 
     status.textContent = 'Sending…';
     status.className = '';
+    submitButton.disabled = true;
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
@@ -155,12 +157,15 @@ function configureContactForm() {
         body: JSON.stringify({ access_key: formKey, ...fields }),
       });
 
-      if (!response.ok) throw new Error('Request failed');
+      const result = await response.json();
+      if (!response.ok || result.success !== true) throw new Error('Request failed');
       form.reset();
       status.textContent = 'Message sent successfully! Thanks for reaching out.';
     } catch {
       status.textContent = 'Something went wrong. Please try again or email me directly.';
       status.className = 'error';
+    } finally {
+      submitButton.disabled = false;
     }
   });
 }

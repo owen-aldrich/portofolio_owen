@@ -18,7 +18,7 @@ The contact form needs a Web3Forms access key. Add it to this meta tag in `index
 <meta name="web3forms-key" content="YOUR_ACCESS_KEY" />
 ```
 
-The form is not configured while this value is empty. The site does not read `.env` files or Vercel environment variables. The key will be visible in the deployed page, so restrict it to the production domain in the Web3Forms dashboard.
+The site reads this key directly from `index.html`; it does not need `.env`, Vercel environment variables, or a build step. Web3Forms allows access keys in client-side code. If your plan supports Trusted Domains, you can restrict submissions to your production domain.
 
 ## Deploy to Vercel
 

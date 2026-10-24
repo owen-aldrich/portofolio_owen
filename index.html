@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,700;1,6..72,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/src/css/style.css" />
     <link rel="stylesheet" href="/src/css/overrides.css" />
-    <meta name="web3forms-key" content="" />
+    <meta name="web3forms-key" content="aa6cc431-52c1-44a5-981c-b77bffea9a0b" />
     <title>Owen Aldrich Setiawan</title>
   </head>
   <body>
@@ -205,11 +205,11 @@
                 <a class="social" href="https://mail.google.com/mail/?view=cm&amp;to=owenaldrichsetiawan@gmail.com" target="_blank" rel="noopener noreferrer"><span class="icon-box"><img src="/src/assets/icons/mail.svg" alt=""></span>Email</a>
               </div>
             </div>
-            <form id="contact-form" novalidate>
-              <div id="form-status"></div>
-              <label>Name<input name="name" placeholder="Your name"></label>
-              <label>Email<input type="email" name="email" placeholder="your@email.com"></label>
-              <label>Message<textarea name="message" rows="5" placeholder="Tell me about your project or just say hello…"></textarea></label>
+            <form id="contact-form">
+              <div id="form-status" role="status" aria-live="polite"></div>
+              <label>Name<input name="name" placeholder="Your name" autocomplete="name" required></label>
+              <label>Email<input type="email" name="email" placeholder="your@email.com" autocomplete="email" required></label>
+              <label>Message<textarea name="message" rows="5" placeholder="Tell me about your project or just say hello…" required></textarea></label>
               <button class="button dark" type="submit">Send Message</button>
             </form>
           </div>
@@ -233,7 +233,7 @@
       </div>
       <div class="cv-modal-footer">
         <a href="/public/cv/owen-aldrich-cv.pdf" target="_blank" rel="noopener noreferrer">Open PDF directly</a>
-        <a class="button dark" href="/public/cv/owen-aldrich-cv.pdf" download="CV-Owen Aldrich S.pdf">Download CV</a>
+        <a class="button dark" href="/public/cv/owen-aldrich-cv.pdf" download="CV-Owen Aldrich Setiawan.pdf">Download CV</a>
       </div>
     </dialog>
     <script type="module" src="/src/js/app.js"></script>

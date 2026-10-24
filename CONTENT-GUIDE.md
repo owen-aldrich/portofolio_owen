@@ -224,7 +224,7 @@ Both files should be JPG. After adding them, open `index.html` with Live Server 
 
 ## 7. Set the Web3Forms API Key
 
-The contact form submits via [Web3Forms](https://web3forms.com). Without a valid API key the form renders a configuration error and the submit button is disabled.
+The contact form submits via [Web3Forms](https://web3forms.com). It needs a valid access key in `index.html` to send messages.
 
 ### Step 1 — Get your access key
 
@@ -239,7 +239,7 @@ Open `index.html` and put the key in the `web3forms-key` meta tag:
 <meta name="web3forms-key" content="your-access-key-here" />
 ```
 
-The same value is deployed with the static site. Restrict the key to your production domain in the Web3Forms dashboard.
+The same value is deployed with the static site. If your plan supports Trusted Domains, you can restrict submissions to your production domain in the Web3Forms dashboard.
 
 ### Step 3 — Deploy to Vercel
 
