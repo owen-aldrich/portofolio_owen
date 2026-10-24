@@ -1,6 +1,6 @@
 # Owen Aldrich Setiawan — Portfolio
 
-Static personal portfolio built with HTML, CSS, and JavaScript. The site does not require Node.js, npm, or a build tool.
+Static personal portfolio built with HTML, CSS, and JavaScript. Open it with Live Server locally or serve the files directly on Vercel. No Node.js, npm, Vite, or build step is required.
 
 ## Run locally
 
@@ -12,21 +12,23 @@ Do not open the file directly with a `file://` URL because the JavaScript uses b
 
 ## Configure the contact form
 
-Add the Web3Forms access key to this meta tag in `index.html`:
+The contact form needs a Web3Forms access key. Add it to this meta tag in `index.html`:
 
 ```html
 <meta name="web3forms-key" content="YOUR_ACCESS_KEY" />
 ```
 
-The key is used by client-side JavaScript, so it will be visible in the deployed page. Restrict the key to the production domain in the Web3Forms dashboard.
+The form is not configured while this value is empty. The site does not read `.env` files or Vercel environment variables. The key will be visible in the deployed page, so restrict it to the production domain in the Web3Forms dashboard.
 
 ## Deploy to Vercel
 
 1. Import the repository in Vercel.
 2. Set **Framework Preset** to **Other**.
 3. Leave **Build Command** empty.
-4. Leave **Output Directory** empty so Vercel serves the repository root.
+4. Set **Output Directory** to `.` (the repository root). This matters because `index.html` is in the root while the `public/` folder also exists.
 5. Deploy.
+
+The **View CV** button opens an on-page preview; **Download CV** saves the PDF from `public/cv/`.
 
 ## Structure
 

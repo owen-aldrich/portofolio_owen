@@ -244,7 +244,7 @@ The same value is deployed with the static site. Restrict the key to your produc
 ### Step 3 — Deploy to Vercel
 
 1. Open your project in the [Vercel dashboard](https://vercel.com).
-2. Use **Framework Preset: Other**, leave **Build Command** empty, and leave **Output Directory** empty.
+2. Use **Framework Preset: Other**, leave **Build Command** empty, and set **Output Directory** to `.` (the repository root).
 3. Deploy the static site.
 
 ### Step 4 — Update the Website URL in Web3Forms
