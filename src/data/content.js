@@ -1,6 +1,7 @@
 ﻿// ============================================================
 // src/data/content.js  —  SINGLE SOURCE OF TRUTH
-// Edit ONLY this file to update text, images, and data.
+// Detail pages and certificate modals use this data.
+// Homepage content, including project cards, is maintained in index.html.
 // ============================================================
 
 // ── PERSONAL INFO ────────────────────────────────────────────
@@ -76,6 +77,7 @@ export const personal = {
 //   4. Copy one object below, paste it at the end of the array
 //   5. Change every field (slug must be URL-safe, lowercase, hyphens)
 //   6. Add tech names to techStack[] — they render as pills automatically
+//   7. Add the matching project card to #projects-panel in index.html
 //
 // Fields:
 //   slug         – URL slug, e.g. "my-project"
@@ -91,6 +93,29 @@ export const personal = {
 //   githubUrl    – string or null
 //   liveUrl      – string or null
 export const projects = [
+  {
+    slug:        'volt',
+    title:       'VOLT — Smartphone Storefront',
+    description: 'Responsive Indonesian smartphone storefront built with semantic HTML, modular CSS, and Vanilla JavaScript, featuring product discovery, persistent cart state, checkout validation, demo authentication, and warranty lookup flows.',
+    category:    '// FRONTEND WEB',
+    coverImage:  '/public/images/projects/volt/cover-home.png',
+    detailImage: '/public/images/projects/volt/detail-cart.png',
+    year:        '2026',
+    techStack:   ['HTML', 'CSS', 'JavaScript'],
+    features: [
+      { title: 'Complete storefront journey', description: 'Eight connected pages cover product discovery, catalog browsing, cart management, checkout, account access, warranty lookup, and brand information.' },
+      { title: 'Interactive product catalog', description: 'Twelve products can be filtered by series, price, and capacity, sorted, viewed as a grid or list, and browsed with pagination.' },
+      { title: 'Persistent cart and session state', description: 'Cart quantities persist through localStorage, while demo login sessions use localStorage or sessionStorage depending on the remember-me option.' },
+      { title: 'Validated commerce flows', description: 'Address and city validation gate the simulated checkout, with clear empty, success, and error states throughout the experience.' },
+      { title: 'Reusable frontend architecture', description: 'Shared navigation, footer, product details, design tokens, and component styles keep the multi-page interface consistent and maintainable.' },
+    ],
+    outcomes: [
+      { title: 'Eight-page static website', description: 'Built a smartphone storefront with HTML, CSS, and JavaScript that runs locally without a build step or backend.' },
+      { title: 'Browser-based shopping demo', description: 'Implemented product filtering, a cart saved in localStorage, and checkout form validation. Orders, payments, login, and warranty checks are frontend simulations.' },
+    ],
+    githubUrl: 'https://github.com/owen-aldrich/VOLT',
+    liveUrl:   null,
+  },
   {
     slug:        'smart-demand',
     title:       'SmartDemand — Sales Volume Prediction',

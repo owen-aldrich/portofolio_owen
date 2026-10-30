@@ -1,6 +1,6 @@
 # Content Guide — Owen Aldrich Setiawan Portfolio
 
-All site content lives in **one file**: `src/data/content.js`. Update that file and the site updates automatically — no component code changes needed.
+Homepage content, including project and certificate cards, lives in `index.html`. Project detail pages and certificate modals use `src/data/content.js`. Keep matching entries in both files up to date.
 
 ---
 
@@ -107,7 +107,11 @@ Open `src/data/content.js`, find the `projects` array, and append a new object:
 },
 ```
 
-### Step 5 — Check the result
+### Step 5 — Add the homepage card
+
+Open `index.html` and add an `<article class="project-card">` inside `#projects-panel`, following an existing card. Use the same title, category, cover image, GitHub URL, and demo URL as the data entry. Set its **View details** link to `project.html?id=<slug>`. Put the card first to feature the newest project.
+
+### Step 6 — Check the result
 
 Open `index.html` with Live Server, then open the project from the Work section to preview it.
 
