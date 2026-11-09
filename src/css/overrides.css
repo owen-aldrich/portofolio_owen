@@ -36,7 +36,6 @@
 .cv-preview-scroll {
   flex: 1;
   min-height: 0;
-  overflow: auto;
   padding: 16px;
   background: var(--chip);
 }
@@ -44,9 +43,10 @@
 .cv-preview {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 900px;
   margin: auto;
+  border: 0;
   background: #fff;
   box-shadow: 0 4px 20px #0000001a;
 }
